@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Andika+New+Basic:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+h1{
+   font-family: 'Andika New Basic', Bold;
+}
+body{
+ display: grid;
+  grid-template-areas: 
+    "header"
+    "main "
+    "footer";
+}
+header{
+ grid-area: header;
+  display: grid;
+  justify-items: center;
+}
+
+main{
+ grid-area: main;
+  display:grid;
+  grid-auto-flow: row;
+  grid-template-columns: 250px 1fr;
+  justify-content:start;
+}
+footer{
+  grid-area:footer;
+  display:grid;
+   justify-items:center;
+ 
+}
+
+.headerImage {
+  -webkit-transform:rotate(7deg);
+  -moz-transform: rotate(7deg);
+  -ms-transform: rotate(7deg);
+  -o-transform: rotate(7deg);
+  transform: rotate(7deg);
+  border:2px solid #fff;
+  background: url(img/tiger.png) no-repeat;
+  -moz-box-shadow: 10px 10px 5px #ccc;
+  -webkit-box-shadow: 10px 10px 5px #ccc;
+  box-shadow: 10px 10px 5px #ccc;
+  -moz-border-radius:25px;
+  -webkit-border-radius:25px;
+  border-radius:25px;
+  
+}
+article{
+  -webkit-column-width: 250px;
+     -moz-column-width: 250px;
+          column-width: 250px;
+  font-family: 'Lato', Regular;
+}
+blockquote{
+  font-family: 'Andika New Basic', Bold;
+  color: red;
+  float: right;
+}
+.articleImages{
+  float:left;
+}
+table{
+    font-family: 'Lato', Regular;
+}
+@media (max-width: 800px) {
+  article{
+    column-count:1;
+  }
+  main{
+  display: flex;
+ flex-direction: column-reverse;
+    
+}
+  
+  
+  
+}
